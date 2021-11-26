@@ -30,7 +30,6 @@ int main()
   cin >> a;
   findPrimary();
 
-  
 
   return 0;
 }

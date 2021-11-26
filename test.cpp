@@ -1,29 +1,19 @@
 #include <iostream>
-#include <vector>
-using namespace std;
-vector<int> arr;
 
-void binary(int n);
+using namespace std;
 
 int main()
 {
-  int n;
-  cin >> n;
-  /* while寫法
-  while(n > 0)
+  int arr[3];
+
+  for(int i = 0; i < 3; i++)
   {
-    arr.push_back(n%2);
-    n /=2;
-  }*/
-  binary(n);
-  for(int i = arr.size()-1; i >= 0 ; i--)
-    cout << arr[i];
-  cout << endl;
+    scanf("%d,%d,%d", &arr[0], &arr[1], &arr[2]);
+    for(int j = 0; j < 3; j++)
+    {
+      cout << arr[j] << endl;
+    }
+    
+  }
   return 0;
-}
-void binary(int n)
-{
-  if(n == 0) return;
-  arr.push_back(n%2);
-  binary(n/2);
 }
