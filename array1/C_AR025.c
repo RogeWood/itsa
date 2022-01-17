@@ -6,7 +6,8 @@ int main()
 {
   char s[10000];
   scanf("%s", s);
-  for(int i = 0; i < strlen(s); i++)
+  int slen = strlen(s);
+  for(int i = 0; i < slen; i++)
     count[s[i]]++;
 
   for(int i = 200; i > 0; i--)
