@@ -1,16 +1,17 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main()
 {
   int arr[6];
   for(int i = 0; i < 6; i++)
-    scanf("%d", &arr[i]);
+    cin >> arr[i];
   for(int j = 5; j >= 0; j--)
   {
     if(j == 0)
-      printf("%d\n", arr[j]);
+      cout << arr[j] << endl;
     else
-      printf("%d ", arr[j]);
+      cout << arr[j] << ' ';
   }
   return 0;
 }
